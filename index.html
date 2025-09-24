@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista De Compras</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Lista De Compras</h1>
+
+    <input type="text" id="itemInput" placeholder="Agregar nuevo producto">
+    <input type="number" id="quantityInput" placeholder="Cantidad" min="1" value="1">
+    <input type="number" id="priceInput" placeholder="0.00" min="0" step="0.01">
+    <button id="addButton">Agregar</button>
+
+    <div id="listContainer">
+        <ul id="itemList"></ul>
+    </div>
+
+    <button id="downloadButton">Captura</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="control/producto.js"></script>
+    <script src="control/carrito.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
